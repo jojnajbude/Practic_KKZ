@@ -234,74 +234,75 @@ namespace prac1_console
         }
         public static bool operator >(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator > ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator > (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
         }
 
         public static bool operator <(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator < ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator < (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
         }
 
         public static bool operator >=(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator >= ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator >= (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
         }
 
         public static bool operator <=(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator <= ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator <= (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
         }
 
         public static bool operator !=(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator != ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator != (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
         }
 
         public static bool operator ==(Fraction ob1, Fraction ob2)
         {
-            //неправильний дріб
+            bool result;
             ob1.GetImproperView();
             ob2.GetImproperView();
-            //спільний знаменник
-            ob1.Numerator *= ob2.Denominator;
-            ob2.Numerator *= ob1.Denominator;
-            //порівняння
-            return ob1.Numerator == ob2.Numerator;
+            result = (float)ob1.Numerator / (float)ob1.Denominator == (float)ob2.Numerator / (float)ob2.Denominator;
+            ob1.GetMixedView();
+            ob2.GetMixedView();
+            return result;
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (this < (obj as Fraction)) return -1;
+            if (this > (obj as Fraction)) return 1;
+            return 0;
         }
 
         public override string ToString()
@@ -309,11 +310,6 @@ namespace prac1_console
             string sgn = "";
             if (_sign == -1) sgn = "-";
             return "Integer part: "+ sgn + IntPart + " Fraction: " + Numerator + "/" + Denominator;
-        }
-
-        public int CompareTo(object obj)
-        {
-            throw new NotImplementedException();
         }
 
         ~Fraction()

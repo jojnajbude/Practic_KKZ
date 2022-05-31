@@ -8,7 +8,6 @@ namespace prac1_console
     internal class Program
     {
         static void Main(string[] args)
-
         {
             //string s1 = "1 5 12 10";
             //string s2 = "123/10";
