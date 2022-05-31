@@ -21,7 +21,10 @@ namespace prac1_console
             //f.GetMixedView();
             //Console.WriteLine(f.IntPart+"|"+f.Numerator+"/"+f.Denominator);*/
 
+            Fraction s = new Fraction(-5.123456789);
+            Console.WriteLine(s);
 
+            /*
             Time t1 = new Time(156489);
             Time t2 = new Time(33, 15, 12);
             Time t3 = new Time(60,75,12);
@@ -31,7 +34,7 @@ namespace prac1_console
             t3 = t3 - t1;
             Console.WriteLine(t3);
             Console.WriteLine(Time.Parse("15 62 13"));
-            Console.WriteLine(Time.Parse("156489"));
+            Console.WriteLine(Time.Parse("156489"));*/
 
         }
     }

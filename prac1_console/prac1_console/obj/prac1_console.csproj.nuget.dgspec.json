@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\practica\\prac1_console\\prac1_console\\prac1_console.csproj": {}
+    "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj": {}
   },
   "projects": {
-    "D:\\practica\\prac1_console\\prac1_console\\prac1_console.csproj": {
+    "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\practica\\prac1_console\\prac1_console\\prac1_console.csproj",
+        "projectUniqueName": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
         "projectName": "prac1_console",
-        "projectPath": "D:\\practica\\prac1_console\\prac1_console\\prac1_console.csproj",
+        "projectPath": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
         "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
-        "outputPath": "D:\\practica\\prac1_console\\prac1_console\\obj\\",
+        "outputPath": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

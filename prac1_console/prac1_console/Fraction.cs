@@ -27,6 +27,28 @@ namespace prac1_console
             _denominator = denominator;
         }
 
+        public Fraction(double number)
+        {
+            if(number>=0)
+            {
+                _sign = 1;
+            }
+            else _sign = -1;
+            string str = number.ToString();
+            string[] str_array = str.Split(".");
+
+            _intPart = Math.Abs(Convert.ToInt32(str_array[0]));
+            _numerator = Convert.ToInt32(str_array[1]);
+            string zeros = "";
+            for(int i = 0; i<(str_array[1].Length);i++)
+            {
+                zeros += "0";
+            }
+            _denominator = Convert.ToInt32("1"+zeros);
+
+
+        }
+
         public void GetImproperView()
         {
             _numerator += _intPart * _denominator;
@@ -284,7 +306,9 @@ namespace prac1_console
 
         public override string ToString()
         {
-            return "Integer part: " + IntPart + " Fraction: " + Numerator + "/" + Denominator;
+            string sgn = "";
+            if (_sign == -1) sgn = "-";
+            return "Integer part: "+ sgn + IntPart + " Fraction: " + Numerator + "/" + Denominator;
         }
 
         public int CompareTo(object obj)
