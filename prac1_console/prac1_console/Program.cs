@@ -2,37 +2,29 @@
 
 namespace prac1_console
 {
-
-
-   
     internal class Program
     {
         static void Main(string[] args)
-
         {
-            //string s1 = "1 5 12 10";
-            //string s2 = "123/10";
+            Fraction f1 = new Fraction(1, 2);
+            Fraction f2 = new Fraction(3, 4);
+            Fraction f3 = new Fraction(8, 19);
+            Fraction f4 = new Fraction(3, 10);
+            Fraction f5 = new Fraction(9, 22);
+            Fraction[] fractions = { f1,f2,f3,f4,f5};
 
+            for (int i = 0; i < fractions.Length; i++)
+            {
+                Console.WriteLine(fractions[i] + "\n");
+            }
 
-            //Fraction s = Fraction.Parse(s1);
-            //Console.WriteLine(s.IntPart + "|" + s.Numerator + "/" + s.Denominator);
-            ///*
-            //Fraction f = new Fraction(38, 12);
-            //f.GetMixedView();
-            //Console.WriteLine(f.IntPart+"|"+f.Numerator+"/"+f.Denominator);*/
+            Array.Sort(fractions);
 
-
-            Time t1 = new Time(156489);
-            Time t2 = new Time(33, 15, 12);
-            Time t3 = new Time(60,75,12);
-            Time t4 = new Time();
-            Console.WriteLine(t3);
-            Console.WriteLine(t1);
-            t3 = t3 - t1;
-            Console.WriteLine(t3);
-            Console.WriteLine(Time.Parse("15 62 13"));
-            Console.WriteLine(Time.Parse("156489"));
-
+            Console.WriteLine("Result");
+            for (int i = 0; i < fractions.Length; i++)
+            {
+                Console.WriteLine(fractions[i]+"\n");
+            }
         }
     }
 }
