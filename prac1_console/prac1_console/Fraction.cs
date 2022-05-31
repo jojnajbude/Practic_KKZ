@@ -29,7 +29,7 @@ namespace prac1_console
 
         public Fraction(double number)
         {
-            if(number>=0)
+            if (number >= 0)
             {
                 _sign = 1;
             }
@@ -37,15 +37,15 @@ namespace prac1_console
             string str = number.ToString();
             string[] str_array = str.Split(".");
 
+
             _intPart = Math.Abs(Convert.ToInt32(str_array[0]));
             _numerator = Convert.ToInt32(str_array[1]);
             string zeros = "";
-            for(int i = 0; i<(str_array[1].Length);i++)
+            for (int i = 0; i < (str_array[1].Length); i++)
             {
                 zeros += "0";
             }
-            _denominator = Convert.ToInt32("1"+zeros);
-
+            _denominator = Convert.ToInt32("1" + zeros);
 
         }
 
