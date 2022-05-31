@@ -8,19 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Владислав Борода\\.nuget\\packages\\": {}
+    "C:\\Users\\Андрей\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
+      "projectUniqueName": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
       "projectName": "prac1_console",
-      "projectPath": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
-      "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\obj\\",
+      "projectPath": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
+      "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
+      "outputPath": "D:\\Practic_KKZ\\prac1_console\\prac1_console\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
