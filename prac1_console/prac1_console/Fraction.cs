@@ -9,7 +9,7 @@ namespace prac1_console
         private int _numerator;
         private int _denominator;
 
-        public int Numerator { set { _numerator = value; } get { return _numerator; } }
+        public int Numerator { set { _numerator = value; } get { return _numerator; } }//инкапсуляция
         public int Denominator { set { _denominator = value; } get { return _denominator; } }
         public int IntPart { set { _intPart = value; } get => GetIntPart(); }
         public int Sign { set { _sign = value; } get { return _sign; } }
@@ -35,7 +35,7 @@ namespace prac1_console
             }
             else _sign = -1;
             string str = number.ToString();
-            string[] str_array = str.Split(".");
+            string[] str_array = str.Split(",");
 
             _intPart = Math.Abs(Convert.ToInt32(str_array[0]));
             _numerator = Convert.ToInt32(str_array[1]);
@@ -49,13 +49,13 @@ namespace prac1_console
 
         }
 
-        public void GetImproperView()
+        public void GetImproperView()//neprav drob
         {
             _numerator += _intPart * _denominator;
             _intPart = 0;
         }
 
-        public void GetMixedView()
+        public void GetMixedView()//smeshanyi
         {
             Cancellation();
             if (_numerator > _denominator)
@@ -65,7 +65,7 @@ namespace prac1_console
             }
         }
 
-        public void Cancellation()
+        public void Cancellation()//uproshenie
         {
             bool access = false;
 
@@ -90,13 +90,13 @@ namespace prac1_console
             }
         }
 
-        private int GetIntPart()
+        private int GetIntPart()//vudelit` celuy chast`
         {
             GetMixedView();
             return _intPart;
         }
 
-        public static Fraction Parse(string str)
+        public static Fraction Parse(string str)//parse
         {
             int intPart, numerator, denominator, sign;
             string[] strs = str.Split(' ');
@@ -120,7 +120,7 @@ namespace prac1_console
             return res;
         }
 
-        public static Fraction operator +(Fraction fraction1, Fraction fraction2)
+        public static Fraction operator +(Fraction fraction1, Fraction fraction2)//peregruzka operatura: 2 ekz klassa +
         {
             Fraction result = new Fraction();
             result.IntPart = fraction1.Sign * fraction1.IntPart + fraction2.Sign * fraction2.IntPart;
@@ -135,26 +135,26 @@ namespace prac1_console
             return result;
         }
 
-        public static Fraction operator +(Fraction fraction, int number)
+        public static Fraction operator +(Fraction fraction, int number)//peregruzka operatora: +int
         {
             fraction.IntPart += number;
             return fraction;
         }
 
-        public static float operator +(float number, Fraction fraction)
+        public static float operator +(float number, Fraction fraction)//peregruzka operatora: +float
         {
             number += fraction.IntPart;
             number += ((float)fraction.Numerator / (float)fraction.Denominator);
             return number;
         }
 
-        public static Fraction operator -(Fraction fraction)
+        public static Fraction operator -(Fraction fraction)//peregruzka operatora: urina
         {
             fraction.Sign *= -1;
             return fraction;
         }
 
-        public static Fraction operator -(Fraction fraction1, Fraction fraction2)
+        public static Fraction operator -(Fraction fraction1, Fraction fraction2)//peregruzka operatora: - 2 ekz classa
         {
             Fraction result = new Fraction();
             result.IntPart = fraction1.Sign * fraction1.IntPart - fraction2.Sign * fraction2.IntPart;
@@ -169,13 +169,13 @@ namespace prac1_console
             return result;
         }
 
-        public static Fraction operator -(Fraction fraction, int number)
+        public static Fraction operator -(Fraction fraction, int number)//peregruzka operatora: -int
         {
             fraction.IntPart -= number;
             return fraction;
         }
 
-        public static float operator -(float number, Fraction fraction)
+        public static float operator -(float number, Fraction fraction)//peregruzka operatora: -float
         {
             number -= fraction.IntPart;
             number -= ((float)fraction.Numerator / (float)fraction.Denominator);
@@ -298,7 +298,7 @@ namespace prac1_console
             return result;
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(object obj)//interface dlya sortirovko klassa
         {
             if (this < (obj as Fraction)) return -1;
             if (this > (obj as Fraction)) return 1;
@@ -312,7 +312,7 @@ namespace prac1_console
             return "Integer part: "+ sgn + IntPart + " Fraction: " + Numerator + "/" + Denominator;
         }
 
-        ~Fraction()
+        ~Fraction()//dekons
         {
             Console.WriteLine("Object has destroyed");
         }

@@ -105,7 +105,7 @@ namespace prac1_console
             return time_start;
         }
 
-        public static Time Parse(string time)
+        public static Time Parse(string time)//стат метод класса для разделения строки на экземпляр класса
         {
             string[] str = time.Split(' ');
             Time t = new Time();
@@ -127,12 +127,12 @@ namespace prac1_console
         }
           
 
-        public override string ToString()
+        public override string ToString()//переопределение
         {
             return "Hours: "+_hours+" Minutes: "+_minutes+" Seconds: "+_seconds;
         }
 
-        ~Time()
+        ~Time()//деструктор
         {
             Console.WriteLine("Object has destroyed.");
         }
