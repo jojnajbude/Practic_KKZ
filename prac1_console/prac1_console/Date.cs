@@ -12,7 +12,7 @@ namespace prac1_console
         private static int[] maxdays30 = { 4, 6, 9, 11 };
         private static int[] maxdays31 = { 1, 3, 5, 7, 8, 10, 12 };
 
-        public bool isLeap { private set; get; }
+        public bool isLeap { private set; get; }//Zadannya zminniy visokosniy svoystva
 
         public Date()
         {
@@ -27,9 +27,12 @@ namespace prac1_console
             else
                 isLeap = false;
 
-            if (_month > 12)
-                _month = 12;
-            else if (_month < 1)
+            while (_month > 12)
+            {
+                _month -= 12;
+                year++;
+            }
+            if (_month < 1)
                 _month = 1;
 
             month = _month;
@@ -74,7 +77,7 @@ namespace prac1_console
                     month -= 12;
                     year++;
                 }
-                day = checkDays(day);
+                day = checkDays(day);//rekursiya
             }
 
             return day;
@@ -95,6 +98,11 @@ namespace prac1_console
             Date result = new Date();
             result.year = date1.year + date2.year;
             result.month = date1.month + date2.month;
+            while (result.month > 12)
+            {
+                result.month-=12;
+                result.year++;
+            }
             result.day = date1.day + date2.day;
             result.day = result.checkDays(result.day);
             return result;
@@ -109,7 +117,11 @@ namespace prac1_console
 
         public static bool operator >(Date date1, Date date2)
         {
-            if (date1.year>date2.year && date1.month > date2.month && date1.day > date2.day)
+            if (date1.year > date2.year)
+                return true;
+            else if (date1.month > date2.month)
+                return true;
+            else if (date1.day>date2.day)
                 return true;
             else
                 return false;
@@ -117,7 +129,11 @@ namespace prac1_console
 
         public static bool operator <(Date date1, Date date2)
         {
-            if (date1.year < date2.year && date1.month < date2.month && date1.day < date2.day)
+            if (date1.year < date2.year)
+                return true;
+            else if (date1.month < date2.month)
+                return true;
+            else if (date1.day < date2.day)
                 return true;
             else
                 return false;
@@ -125,7 +141,11 @@ namespace prac1_console
 
         public static bool operator >=(Date date1, Date date2)
         {
-            if (date1.year >= date2.year && date1.month >= date2.month && date1.day >= date2.day)
+            if (date1.year >= date2.year)
+                return true;
+            else if (date1.month >= date2.month)
+                return true;
+            else if (date1.day >= date2.day)
                 return true;
             else
                 return false;
@@ -133,7 +153,11 @@ namespace prac1_console
 
         public static bool operator <=(Date date1, Date date2)
         {
-            if (date1.year <= date2.year && date1.month <= date2.month && date1.day <= date2.day)
+            if (date1.year <= date2.year)
+                return true;
+            else if (date1.month <= date2.month)
+                return true;
+            else if (date1.day <= date2.day)
                 return true;
             else
                 return false;

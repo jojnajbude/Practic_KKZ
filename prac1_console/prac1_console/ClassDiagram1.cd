@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="prac1_console.Complex">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQAAAAQgAEYAVAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="prac1_console.Date">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAAAAAAAAEQACAAgAACBQAAAAAAgEAAAAAByE=</HashCode>
+      <FileName>Date.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="prac1_console.Fraction">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAIAgAABQEYA2ARkAAAAAAEAAAIAgAAAAABzA=</HashCode>
+      <FileName>Fraction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.242" />
+  </Class>
+  <Class Name="prac1_console.Time">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgCAAAQAAAEQAEAAAAEAAAAAAAAAAABAACAAAA=</HashCode>
+      <FileName>Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
