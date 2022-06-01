@@ -91,9 +91,7 @@ namespace prac1_console
            if(_hours<0)
             {
                 Console.WriteLine("Error");
-            }
-                
-         
+            }              
         }
 
         public static Time operator - (Time time_start, Time time_finish)
@@ -105,7 +103,7 @@ namespace prac1_console
             return time_start;
         }
 
-        public static Time Parse(string time)//стат метод класса для разделения строки на экземпляр класса
+        public static Time Parse(string time)
         {
             string[] str = time.Split(' ');
             Time t = new Time();
@@ -127,16 +125,14 @@ namespace prac1_console
         }
           
 
-        public override string ToString()//переопределение
+        public override string ToString()
         {
             return "Hours: "+_hours+" Minutes: "+_minutes+" Seconds: "+_seconds;
         }
 
-        ~Time()//деструктор
+        ~Time()
         {
             Console.WriteLine("Object has destroyed.");
         }
-
-
     }
 }

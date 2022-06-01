@@ -12,7 +12,7 @@ namespace prac1_console
         private int _b = 0;
         private int _i;
 
-        public int Re { set => _a = value; get => _a; }//svoystvo perem Re
+        public int Re { set => _a = value; get => _a; }
         public int Im { set => _b = value; get => _b; }
 
         public Complex()
@@ -60,7 +60,7 @@ namespace prac1_console
             return u;
         }
 
-        public static Complex Parse(string str)//"a + bi" cifri
+        public static Complex Parse(string str)
         {
             Complex res = new Complex();
             string[] str_array = str.Split(' ');
