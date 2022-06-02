@@ -312,6 +312,20 @@ namespace prac1_console
             return "Integer part: "+ sgn + IntPart + " Fraction: " + Numerator + "/" + Denominator;
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Fraction fraction &&
+                   _sign == fraction._sign &&
+                   _intPart == fraction._intPart &&
+                   _numerator == fraction._numerator &&
+                   _denominator == fraction._denominator;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(_sign, _intPart, _numerator, _denominator);
+        }
+
         ~Fraction()
         {
             Console.WriteLine("Object has destroyed");

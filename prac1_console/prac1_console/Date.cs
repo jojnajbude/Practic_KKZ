@@ -199,5 +199,18 @@ namespace prac1_console
         {
             return "Day: " + day + " Month: " + month + " Year: " + year; 
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Date date &&
+                   day == date.day &&
+                   month == date.month &&
+                   year == date.year;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(day, month, year);
+        }
     }
 }
