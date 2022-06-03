@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj": {}
+    "S:\\Programming\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj": {
+    "S:\\Programming\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj",
+        "projectUniqueName": "S:\\Programming\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj",
         "projectName": "prac3_console",
-        "projectPath": "D:\\Practice\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj",
-        "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Practic_KKZ\\prac3_console\\prac3_console\\obj\\",
+        "projectPath": "S:\\Programming\\Practic_KKZ\\prac3_console\\prac3_console\\prac3_console.csproj",
+        "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
+        "outputPath": "S:\\Programming\\Practic_KKZ\\prac3_console\\prac3_console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
