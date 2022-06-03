@@ -66,7 +66,7 @@ namespace prac2_console
 
         static void Main(string[] args)
         {
-            int[,] array = { { 1, -3, 5 }, { 2, 1, 1 }, { 4, 4, 9 } };
+            int[,] array = { { 1, 1, 5 }, { -2, 3, 1 }, { 4, 4, 4 } };
 
             task1(array);
 
