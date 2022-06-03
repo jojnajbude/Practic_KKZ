@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace prac3_console
 {
@@ -7,6 +8,16 @@ namespace prac3_console
         private string _name;
         private string _industry;
         private string _area_served;
+
+        public static LinkedList<Organization> List = new LinkedList<Organization>();
+
+        public static void CheckList()
+        {
+            foreach (var item in List)
+            {
+                item.GetInfo();
+            }
+        }
 
         public string Name
         {
@@ -25,6 +36,11 @@ namespace prac3_console
         }
 
         public abstract void GetInfo();
+
+        public void Add()
+        {
+            List.AddLast(this);
+        }
 
         public Organization()
         {
@@ -87,45 +103,45 @@ namespace prac3_console
             _city = city;
             _number_of_employees = number_of_employees;
         }
-        ~Factory(){}
+        ~Factory() { }
 
-}
-
-public class Insurance : Organization
-{
-    private int _client_number;
-    private string _speciality;
-    public int CN
-    {
-        get { return _client_number; }
-        set { _client_number = value; }
     }
+
+    public class Insurance : Organization
+    {
+        private int _client_number;
+        private string _speciality;
+        public int CN
+        {
+            get { return _client_number; }
+            set { _client_number = value; }
+        }
         public string Speciality
-    {
-        get { return _speciality; }
-        set { _speciality = value; }
-    }
-    public override void GetInfo()
-    {
-        Console.WriteLine($"Insurance: \n\tName of organisation: {Name}");
-        Console.WriteLine("\tNumber of clients: {0}\n\tSpecialization: {1}\n", _client_number, _speciality);
-    }
+        {
+            get { return _speciality; }
+            set { _speciality = value; }
+        }
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Insurance: \n\tName of organisation: {Name}");
+            Console.WriteLine("\tNumber of clients: {0}\n\tSpecialization: {1}\n", _client_number, _speciality);
+        }
 
-    public Insurance() : base() { }
-    public Insurance(string name, string industry, string area_served,
-        int client_number, string spec) : base(name, industry, area_served)
-    {
-        this._client_number = client_number;
-        this._speciality = spec;
-    }
+        public Insurance() : base() { }
+        public Insurance(string name, string industry, string area_served,
+            int client_number, string spec) : base(name, industry, area_served)
+        {
+            this._client_number = client_number;
+            this._speciality = spec;
+        }
 
         ~Insurance() { }
 
 
-}
+    }
 
-public class BuildingCompany : Organization
-{
+    public class BuildingCompany : Organization
+    {
         private string _speciality;
         private string _city;
         private int _number_of_employees;
@@ -142,7 +158,7 @@ public class BuildingCompany : Organization
         }
 
         public BuildingCompany() { }
-        public BuildingCompany(string name, string industry, string area_wide, string spec, string city, int n_o_e):base(name, industry, area_wide)
+        public BuildingCompany(string name, string industry, string area_wide, string spec, string city, int n_o_e) : base(name, industry, area_wide)
         {
 
         }
@@ -151,13 +167,22 @@ public class BuildingCompany : Organization
 
     }
 
-internal class Program
-{
-    static void Main(string[] args)
+    internal class Program
     {
+        static void Main(string[] args)
+        {
             Factory f = new Factory("agrr", "oil", "Country", "Popolski", "Kyiv", 900);
             f.GetInfo();
 
+
+            BuildingCompany bc = new BuildingCompany("Building Co.", "skys", "City", "Gladkevich", "Odesa", 1900);
+            Insurance ins = new Insurance("Insurance Co. ", "Money", "City",300, "Cars");
+
+            Organization.CheckList();
+            f.Add();
+            bc.Add();
+            ins.Add();
+            Organization.CheckList();
+        }
     }
-}
 }
