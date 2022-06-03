@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
-      "projectName": "prac1_console",
-      "projectPath": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\prac1_console.csproj",
+      "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
+      "projectName": "prac2_console",
+      "projectPath": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
       "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice\\Practic_KKZ\\prac1_console\\prac1_console\\obj\\",
+      "outputPath": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",

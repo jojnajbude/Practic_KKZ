@@ -10,7 +10,6 @@ namespace prac1_console
     {
         private int _a = 0;
         private int _b = 0;
-        private int _i;
 
         public int Re { set => _a = value; get => _a; }
         public int Im { set => _b = value; get => _b; }
