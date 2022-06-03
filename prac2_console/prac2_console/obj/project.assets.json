@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\andry\\.nuget\\packages\\": {}
+    "C:\\Users\\Владислав Борода\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\Programming\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
+      "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
       "projectName": "prac2_console",
-      "projectPath": "S:\\Programming\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
-      "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
-      "outputPath": "S:\\Programming\\Practic_KKZ\\prac2_console\\prac2_console\\obj\\",
+      "projectPath": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\prac2_console.csproj",
+      "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice\\Practic_KKZ\\prac2_console\\prac2_console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
