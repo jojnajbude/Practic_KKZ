@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "prac4_wf/1.0.0": {
+        "runtime": {
+          "prac4_wf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "prac4_wf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
