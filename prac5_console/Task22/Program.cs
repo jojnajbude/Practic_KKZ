@@ -22,7 +22,7 @@ namespace Task22
         public Picture(int arraySize)
         {
             _arraySize = arraySize;
-            shapes = new Shape[arraySize];
+            shapes = new Shape[_arraySize];
         }
 
         public void PrintArray()
@@ -57,7 +57,7 @@ namespace Task22
 
         public override string ToString()
         {
-            return "This is: " + Figure; //+ "\nIts side lenght: " + sideLength + "\nIts area: " + GetArea() + "\nIts perimeter: " + GetPerimeter() + "\n";
+            return "This is: " + Figure;
         }
 
         public Shape(float firstParam, float secondParam)
