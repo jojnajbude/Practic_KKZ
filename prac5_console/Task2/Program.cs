@@ -36,7 +36,7 @@ namespace Task21
         {
             foreach (var item in shapes)
             {
-                Console.WriteLine(item);
+                item.Print();
             }
         }
     }
@@ -45,7 +45,9 @@ namespace Task21
     {
         protected Shapes figure;
 
-        public int sideLength;
+        protected int sideLength;
+
+        public int SideLength { get { return sideLength; } }
 
         public int VertexAmount { get; protected set; }
 
@@ -55,11 +57,14 @@ namespace Task21
 
         public abstract double GetPerimeter();
 
-        public abstract void Print();
+        public void Print()
+        {
+            Console.WriteLine("This is: " + Figure + "\n" + ToString());
+        }
 
         public override string ToString()
         {
-            return "This is: " + Figure + "\nIts side lenght: " + sideLength + "\nIts area: " + GetArea() + "\nIts perimeter: " + GetPerimeter() + "\n";
+            return  "Its side lenght: " + sideLength + "\nIts area: " + GetArea() + "\nIts perimeter: " + GetPerimeter() + "\n";
         }
     }
 
@@ -79,11 +84,6 @@ namespace Task21
         public override double GetPerimeter()
         {
             return sideLength*4;
-        }
-
-        public override void Print()
-        {
-            Console.WriteLine("This is: "+Figure);
         }
 
         public Square(int _sideLenth)
@@ -114,11 +114,6 @@ namespace Task21
             return 2*Math.PI*sideLength;
         }
 
-        public override void Print()
-        {
-            Console.WriteLine("This is: " + Figure);
-        }
-
         public Circle(int _sideLenth)
         {
             VertexAmount = 0;
@@ -130,8 +125,7 @@ namespace Task21
 
         public override string ToString()
         {
-            return "This is: " + Figure 
-                + "\nIts radius: " + sideLength 
+            return "Its radius: " + sideLength 
                 + "\nIts area: " + String.Format("{0:0.00}", GetArea())
                 + "\nIts perimeter: " + String.Format("{0:0.00}", GetPerimeter())
                 + "\n";
@@ -154,11 +148,6 @@ namespace Task21
         public override double GetPerimeter()
         {
             return 3 * sideLength;
-        }
-
-        public override void Print()
-        {
-            Console.WriteLine("This is: " + Figure);
         }
 
         public Triangle(int _sideLenth)
