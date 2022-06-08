@@ -8,24 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Андрей\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Владислав Борода\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practic_KKZ\\prac4_wf\\prac4_wf\\prac4_wf.csproj",
+      "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac4_wf\\prac4_wf\\prac4_wf.csproj",
       "projectName": "prac4_wf",
-      "projectPath": "D:\\Practic_KKZ\\prac4_wf\\prac4_wf\\prac4_wf.csproj",
-      "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
-      "outputPath": "D:\\Practic_KKZ\\prac4_wf\\prac4_wf\\obj\\",
+      "projectPath": "D:\\Practice\\Practic_KKZ\\prac4_wf\\prac4_wf\\prac4_wf.csproj",
+      "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
+      "outputPath": "D:\\Practice\\Practic_KKZ\\prac4_wf\\prac4_wf\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -68,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
