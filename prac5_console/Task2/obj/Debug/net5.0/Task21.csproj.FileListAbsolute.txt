@@ -1,0 +1,16 @@
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.exe
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.deps.json
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.runtimeconfig.json
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.runtimeconfig.dev.json
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.dll
+D:\Practice\Practic_KKZ\prac5_console\Task2\bin\Debug\net5.0\Task21.pdb
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.csproj.AssemblyReference.cache
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.AssemblyInfoInputs.cache
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.AssemblyInfo.cs
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.csproj.CoreCompileInputs.cache
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.dll
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\refint\Task21.dll
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.pdb
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\Task21.genruntimeconfig.cache
+D:\Practice\Practic_KKZ\prac5_console\Task2\obj\Debug\net5.0\ref\Task21.dll
