@@ -1,0 +1,16 @@
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.exe
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.deps.json
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.runtimeconfig.json
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.runtimeconfig.dev.json
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.dll
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\ref\prac6_console.dll
+D:\Practic_KKZ\prac6_console\prac6_console\bin\Debug\net5.0\prac6_console.pdb
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.csproj.AssemblyReference.cache
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.AssemblyInfoInputs.cache
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.AssemblyInfo.cs
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.csproj.CoreCompileInputs.cache
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.dll
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\ref\prac6_console.dll
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.pdb
+D:\Practic_KKZ\prac6_console\prac6_console\obj\Debug\net5.0\prac6_console.genruntimeconfig.cache
