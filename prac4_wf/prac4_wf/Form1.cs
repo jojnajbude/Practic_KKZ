@@ -22,8 +22,8 @@ namespace prac4_wf
         {
             Application.Exit();
         }
-
-
+        
+        
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -42,7 +42,16 @@ namespace prac4_wf
                 }
                 else if (radioButton4.Checked == true)
                 {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
+
+                    if(Convert.ToDouble(textBox2.Text) == 0)
+                    {
+                        textBox4.Text = "Divided by zero";
+                    }
+                    else
+                    {
+                        textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
+                    }
+                    
                 }
                 else if (radioButton5.Checked == true)
                 {
@@ -97,7 +106,7 @@ namespace prac4_wf
         {
             operation = "/";
             textBox3.Text = "";
-            textBox3.Text = textBox1.Text + " " + operation + " " + textBox2.Text;
+            textBox3.Text = textBox1.Text + " " + operation+ " " + textBox2.Text;
         }
 
         private void radioButton5_Click(object sender, EventArgs e)
