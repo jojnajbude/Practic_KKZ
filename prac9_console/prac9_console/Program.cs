@@ -96,6 +96,11 @@ namespace prac3_console
         }
     }
 
+    class FactoryException: SystemException
+    {
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
