@@ -42,16 +42,7 @@ namespace prac4_wf
                 }
                 else if (radioButton4.Checked == true)
                 {
-
-                    if(Convert.ToDouble(textBox2.Text) == 0)
-                    {
-                        textBox4.Text = "Divided by zero";
-                    }
-                    else
-                    {
-                        textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
-                    }
-                    
+                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
                 }
                 else if (radioButton5.Checked == true)
                 {

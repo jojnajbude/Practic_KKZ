@@ -9,7 +9,7 @@ namespace prac3_console
         private string _industry;
         private string _area_served;
 
-        public static LinkedList<Organization> List = new LinkedList<Organization>();//контрваріантність, в колекцію на основі базового класу можна добавти класи наслідник
+        public static LinkedList<Organization> List = new LinkedList<Organization>();
 
         public static void CheckList()
         {
