@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj": {}
+    "S:\\Programming\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj": {}
   },
   "projects": {
-    "D:\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj": {
+    "S:\\Programming\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj",
+        "projectUniqueName": "S:\\Programming\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj",
         "projectName": "prac6_console",
-        "projectPath": "D:\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj",
-        "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
-        "outputPath": "D:\\Practic_KKZ\\prac6_console\\prac6_console\\obj\\",
+        "projectPath": "S:\\Programming\\Practic_KKZ\\prac6_console\\prac6_console\\prac6_console.csproj",
+        "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
+        "outputPath": "S:\\Programming\\Practic_KKZ\\prac6_console\\prac6_console\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
