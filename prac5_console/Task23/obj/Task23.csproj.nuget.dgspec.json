@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj": {}
+    "S:\\Programming\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj": {
+    "S:\\Programming\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj",
+        "projectUniqueName": "S:\\Programming\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj",
         "projectName": "Task23",
-        "projectPath": "D:\\Practice\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj",
-        "packagesPath": "C:\\Users\\Владислав Борода\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\Practic_KKZ\\prac5_console\\Task23\\obj\\",
+        "projectPath": "S:\\Programming\\Practic_KKZ\\prac5_console\\Task23\\Task23.csproj",
+        "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
+        "outputPath": "S:\\Programming\\Practic_KKZ\\prac5_console\\Task23\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Владислав Борода\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
