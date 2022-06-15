@@ -96,9 +96,68 @@ namespace prac3_console
         }
     }
 
-    class FactoryException: SystemException
+    public class EventStore
     {
+        public delegate Exception EventHandler();
+        public event EventHandler Notify1;
+        public event EventHandler Notify2;
+        public event EventHandler Notify3;
+        public event EventHandler Notify4;
+        public event EventHandler Notify5;
+        public event EventHandler Notify6;
+        public event EventHandler Notify7;
 
+        public Exception StackOverflowException()
+        {
+            return Notify1.Invoke();
+        }
+
+        public Exception ArrayTypeMismatchException()
+        {
+            return Notify2.Invoke();
+        }
+
+        public Exception DivideByZeroException()
+        {
+            return Notify3.Invoke();
+        }
+
+        public Exception IndexOutOfRangeException()
+        {
+            return Notify4.Invoke();
+        }
+
+        public Exception InvalidCastException()
+        {
+            return Notify5.Invoke();
+        }
+
+        public Exception OutOfMemoryException()
+        {
+            return Notify6.Invoke();
+        }
+
+        public Exception OverflowException()
+        {
+            return Notify7.Invoke();
+        }
+
+        private EventStore SetEvents(EventStore es)
+        {
+            es.Notify1 += () => throw new StackOverflowException();
+            es.Notify2 += () => throw new ArrayTypeMismatchException();
+            es.Notify3 += () => throw new DivideByZeroException();
+            es.Notify4 += () => throw new IndexOutOfRangeException();
+            es.Notify5 += () => throw new InvalidCastException();
+            es.Notify6 += () => throw new OutOfMemoryException();
+            es.Notify7 += () => throw new OverflowException();
+            return es;
+        }
+
+        public EventStore()
+        {
+            SetEvents(this);
+        }
     }
 
     internal class Program
@@ -120,6 +179,17 @@ namespace prac3_console
             action += ins.GetInfo;
 
             action.Invoke();
+
+            EventStore es = new EventStore();
+
+            try
+            {
+                f.number_of_employees /= 0;
+            }
+            catch (Exception e)
+            {
+                es.DivideByZeroException();
+            }
         }
     }
 }
