@@ -24,7 +24,7 @@ namespace prac6_console
 
             public virtual int Total_Harvest()
             {
-                return _area * _per_hectar; // total harvest for all harvesting
+                return _area * _per_hectar; 
             }
 
             public override string ToString()
@@ -42,7 +42,7 @@ namespace prac6_console
             public override int Total_Harvest()
             {
                 int tax = 30;
-                return _area * (_per_hectar - tax) ; //total harvest for farm inctuding tax;
+                return _area * (_per_hectar - tax) ; 
             }
         }
 
@@ -55,8 +55,8 @@ namespace prac6_console
 
             public override int Total_Harvest()
             {
-                int tax = 22; // налог
-                int expenses = _area / 20; // витрати на ресурси
+                int tax = 22; 
+                int expenses = _area / 20; 
 
                 return (_area * (_per_hectar - tax)) - expenses;
             }

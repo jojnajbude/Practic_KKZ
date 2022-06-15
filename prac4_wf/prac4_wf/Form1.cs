@@ -64,7 +64,6 @@ namespace prac4_wf
             {
                 MessageBox.Show("Pick operation!");
             }
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
