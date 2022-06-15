@@ -63,6 +63,18 @@ namespace prac7_console
         {
             return $"{name} - {speed}";
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Car car &&
+                   speed == car.speed &&
+                   name == car.name;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(speed, name);
+        }
     }
     internal class Program
     {
