@@ -42,7 +42,16 @@ namespace prac4_wf
                 }
                 else if (radioButton4.Checked == true)
                 {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
+
+                    if (Convert.ToDouble(textBox2.Text) == 0)
+                    {                       
+                        throw new DivideByZeroException();
+                    }
+                    else
+                    {
+                        textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
+                    }
+
                 }
                 else if (radioButton5.Checked == true)
                 {
@@ -108,3 +117,5 @@ namespace prac4_wf
         }
     }
 }
+
+
