@@ -22,51 +22,49 @@ namespace prac4_wf
         {
             Application.Exit();
         }
-        
-        
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (radioButton1.Checked == true)
             {
-                if (radioButton1.Checked == true)
+                textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text));
+            }
+            else if (radioButton2.Checked == true)
+            {
+                textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text));
+            }
+            else if (radioButton3.Checked == true)
+            {
+                textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text));
+            }
+            else if (radioButton5.Checked == true)
+            {
+                textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) % Convert.ToDouble(textBox2.Text));
+            }
+            else if (radioButton4.Checked == true)
+            {
+                try
                 {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text));
-                }
-                else if (radioButton2.Checked == true)
-                {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text));
-                }
-                else if (radioButton3.Checked == true)
-                {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text));
-                }
-                else if (radioButton4.Checked == true)
-                {
-
                     if (Convert.ToDouble(textBox2.Text) == 0)
-                    {                       
+                    {
                         throw new DivideByZeroException();
                     }
                     else
                     {
                         textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text));
                     }
-
                 }
-                else if (radioButton5.Checked == true)
+                catch (Exception ex)
                 {
-                    textBox4.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) % Convert.ToDouble(textBox2.Text));
-                }
-                else
-                {
-                    MessageBox.Show("Pick operation!");
+                    MessageBox.Show(ex.Message);
                 }
             }
-
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Pick operation!");
             }
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -106,7 +104,7 @@ namespace prac4_wf
         {
             operation = "/";
             textBox3.Text = "";
-            textBox3.Text = textBox1.Text + " " + operation+ " " + textBox2.Text;
+            textBox3.Text = textBox1.Text + " " + operation + " " + textBox2.Text;
         }
 
         private void radioButton5_Click(object sender, EventArgs e)
