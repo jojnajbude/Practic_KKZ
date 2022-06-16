@@ -103,8 +103,8 @@ namespace prac3_console
         {
             Action action = new Action(() => Console.WriteLine("Delegate work started\n"));
 
-            Factory f = new Factory("agrr", "oil", "Country", "Popolski", "Kyiv", 900);
-            BuildingCompany bc = new BuildingCompany("Building Co.", "skys", "City", "Gladkevich", "Odesa", 1900);
+            Factory f = new Factory("Oil Co.", "oil", "Country", "Popolski", "Kyiv", 900);
+            BuildingCompany bc = new BuildingCompany("Building Co.", "skys", "City", "Houses", "Odesa", 1900);
             Insurance ins = new Insurance("Insurance Co. ", "Money", "City", 300, "Cars");
 
             action += f.Pay;
